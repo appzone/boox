@@ -1,6 +1,8 @@
 # boox
 Boox CRM
 
+>> REQUIREMENT : NODEJS
+
 SETUP : 
 >> npm install
 
@@ -12,11 +14,11 @@ API for public use
 
 to retrieve all complain
 
-'localhost:8181/listAllComplain' ==> GET
+>> 'localhost:8181/listAllComplain' ==> GET
 
 to retrieve complain based on id complain
 
-'localhost:8181/getComplain/:idComplain' ==> GET 
+>> 'localhost:8181/getComplain/:idComplain' ==> GET 
 
 create complain and update complain is not for public consume.
 
