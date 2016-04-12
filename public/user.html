@@ -1,0 +1,36 @@
+<div style="padding:20px 0px 60px 0px">
+			
+			<span class="col-md-3">
+			<input type="text" class="form-control ng-valid ng-dirty" ng-model="isi_komplain">
+			</span>
+			<input type="button" ng-click="createData(isi_komplain,'yongli')" value="Create New Complain" class="btn btn-success" />
+		</div>
+
+
+<table class="table">
+	<tr>
+		<th>ID Complain
+		</th>
+		<th>Isi Komplain
+		</th>
+		<th>Status
+	
+	</tr>
+	<tr ng-repeat="complain in dataComplains">
+		<td>
+			{{complain.id_komplain}}
+		</td>
+		<td>
+			{{complain.isi_komplain}}
+		</td>
+		<td>
+			{{complain.status}}
+		</td>
+		
+		
+		<td>
+	
+
+		</td>
+	</tr>
+</table>

@@ -1,0 +1,44 @@
+<div style="padding:20px 0px 60px 0px">
+			<span class="col-md-1" style="font-weight:bold">Search</span>
+			<span class="col-md-3">
+			<input type="text" class="form-control ng-valid ng-dirty" ng-model="searchKeyword">
+			</span>
+		</div>
+
+
+<table class="table">
+	<tr>
+		<th>ID Complain
+		</th>
+		<th>Isi Komplain
+		</th>
+		<th>Status
+		</th>
+		
+		<th>Reported By
+		</th>
+		
+		<th>Action
+		</th>
+	</tr>
+	<tr ng-repeat="complain in dataComplains | filter : searchKeyword " >
+		<td>
+			{{complain.id_komplain}}
+		</td>
+		<td>
+			{{complain.isi_komplain}}
+		</td>
+		<td>
+			{{complain.status}}
+		</td>
+		<td>
+			{{complain.reported_by}}
+		</td>
+		
+		<td>
+		<input type="button" ng-click="updateData(complain.id_komplain,'Closed')" ng-show="complain.status ==  'Open' " value="Mark As Solved" class="btn btn-success" />
+		<input type="button" ng-click="updateData(complain.id_komplain,'Open')" ng-show="complain.status == 'Closed' " value="Mark As Unsolved" class="btn btn-danger" />
+
+		</td>
+	</tr>
+</table>
