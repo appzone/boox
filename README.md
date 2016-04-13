@@ -1,7 +1,7 @@
 # boox
 Boox CRM
 
->> REQUIREMENT : NODEJS
+>> REQUIREMENT : NODEJS dan MongoDB
 
 SETUP : 
 >> npm install
