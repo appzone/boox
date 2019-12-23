@@ -35,6 +35,9 @@ const password = "MY_SECRET_PASSWORD";
 var mongoose = require('mongoose');
 mongoose.connect('mongodb://user:' + password + '@localhost/new');
 
+
+const token = "user:password";
+
 var Schema = mongoose.Schema;
 
 // create a schema
