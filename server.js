@@ -31,8 +31,9 @@ httpServer.listen(port, function(){
 
 
 
+const password = "MY_SECRET_PASSWORD";
 var mongoose = require('mongoose');
-mongoose.connect('mongodb://localhost/new');
+mongoose.connect('mongodb://user:password@localhost/new');
 
 var Schema = mongoose.Schema;
 
