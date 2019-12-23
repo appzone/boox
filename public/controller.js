@@ -5,8 +5,10 @@ var boox = angular.module('boox',  ['ngResource','ngAnimate','ngRoute','ngSaniti
 boox.run(['$rootScope',
     function($rootScope){
         $rootScope.infoQueue = [];
+	let password = "TEST";
         $rootScope.addInfo = function(type, message) {
             console.log("TYPE " , type);
+		console.log("a");
             console.log("Message " , message);
             $rootScope.infoQueue.push({
                 type: type,
